@@ -9,4 +9,13 @@ app.listen(3000,()=>{
 //aa gya
 //fir aaya
 
-//  ye add kiya
+// const app = express();
+// app.listen(3000,()=>{
+//     console.log("server Start");
+// })
+
+// const app = express();
+// app.listen(3000,()=>{
+//     console.log("server Start");
+// })
+
