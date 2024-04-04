@@ -5,3 +5,17 @@ import bodyParser from "body-parser"
 app.listen(3000,()=>{
     console.log("server Start");
 })
+
+//aa gya
+//fir aaya
+
+// const app = express();
+// app.listen(3000,()=>{
+//     console.log("server Start");
+// })
+
+// const app = express();
+// app.listen(3000,()=>{
+//     console.log("server Start");
+// })
+
