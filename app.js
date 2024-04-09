@@ -1,21 +1,21 @@
-import express from "express"
-import bodyParser from "body-parser"
+import bodyParser from "body-parser";
+import express from "express";
+import mongoose from "mongoose";
+import ProductRouter from "./routers/product.router.js"
 
- const app = express();
-app.listen(3000,()=>{
-    console.log("server Start");
+const app = express();
+mongoose.connect("mongodb://localhost:27017/ayurveda")
+.then(result=>{
+
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({extended:true}));
+    
+    app.use("/product",ProductRouter);
+    
+    app.listen(3000,()=>{
+        console.log("server start");
+    })
 })
-
-//aa gya
-//fir aaya
-
-// const app = express();
-// app.listen(3000,()=>{
-//     console.log("server Start");
-// })
-
-// const app = express();
-// app.listen(3000,()=>{
-//     console.log("server Start");
-// })
-
+.catch(err=>{
+    console.log(err);
+})
