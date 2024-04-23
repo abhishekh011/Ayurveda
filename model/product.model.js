@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema({
     // | price       | decimal(10,2) | NO   |     | NULL    |                |
     // | description | varchar(500)  | NO   |     | NULL    |                |
     // | imageUrl    | varchar(255)  | NO   | UNI | NULL    |                |
-    // | categoryId  | int           | YES  | MUL | NULL    |          
+    // | categoryId  | int           | YES  | MUL | NULL    |                |
     id: {
       type: Number,
       required: true
