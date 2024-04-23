@@ -32,8 +32,8 @@ router.post("/signin", signIn);
 router.post("/update-profile", upload.single("profile"), updateProfile);
 router.post("/forgot-password", body("email").isEmail(), forgotPassword);
 router.get("/profile/:userId", getProfile);
-router.get("/user/id/:userId", getUserById);
-router.get("/user/email/:email", getUserByEmail);
+router.get("/data/:userId", getUserById);
+router.get("/email/:email", getUserByEmail);
 router.delete("/user/:identifier", deleteUser);
 
 export default router;
